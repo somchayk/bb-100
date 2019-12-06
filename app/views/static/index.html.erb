@@ -1,0 +1,11 @@
+<%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+
+<h1>Welcome</h1>
+<br />
+<h2>What would you like to do ? </h2>
+
+<nav>
+  <%= link_to 'Home', root_path %>
+  <%= link_to 'Billboard', billboards_path %>
+  <%= link_to 'Artists', artists_path %>
+</nav>
