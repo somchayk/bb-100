@@ -2,8 +2,11 @@ Rails.application.routes.draw do
   devise_for :users
   root 'static#index'
   
-  resources :billboards
-  resources :artists do
+  resources :billboards do
+    resources :artists
+
+  end
+  resources :artists, only: [] do
     resources :songs
   
 
