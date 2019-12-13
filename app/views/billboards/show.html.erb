@@ -1,6 +1,6 @@
 <nav>
   <%= link_to 'Home', root_path %>
-  <%= link_to 'Billboards', billboard_path %>
+  <%= link_to 'Billboards', billboards_path %>
   <%= button_to 'Log Out', destroy_user_session_path, method: :delete%>
 </nav>
 
@@ -11,4 +11,12 @@
 <%= link_to 'View Artist',  billboard_artists_path(@billboard) %>
 <%= link_to "Edit Billboard", edit_billboard_path %>
 <%= link_to 'Delete Billboard', @billboard, method: :delete %>
+
+<ul>
+  <% @billboard.artists.each do |artist| %>
+    <li>
+      <%= link_to artist.name, [@billboard, artist] %>
+    </li>
+  <% end %>
+</ul>
   

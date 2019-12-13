@@ -58,10 +58,16 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (9.7.3)
+      execjs
     bcrypt (3.1.13)
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
+    bootstrap (4.4.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
     builder (3.2.3)
     capybara (3.29.0)
       addressable
@@ -82,6 +88,7 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.9.0)
+    execjs (2.7.0)
     faker (2.8.0)
       i18n (>= 1.6, < 1.8)
     ffi (1.11.3)
@@ -113,6 +120,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     pg (1.1.4)
+    popper_js (1.14.5)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -223,6 +231,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
+  bootstrap (~> 4.4.1)
   capybara (>= 2.15)
   devise
   faker

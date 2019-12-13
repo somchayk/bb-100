@@ -1,7 +1,14 @@
-<h1><%= @billboard.name %></h1>
-<h3><%= link_to "Back to the Billboard charts", root_path %></h3>
-<hr /> 
-<h2><%= link_to 'Add Artist', new_billboard_artist_path(@billboard) %></h2>
+<nav>
+  <%= link_to 'Home', root_path %>
+  <%= link_to 'Billboards', billboards_path %>
+  <%= button_to 'Log Out', destroy_user_session_path, method: :delete%>
+</nav>
+
+
+<h2>What artist would you like to add ?</h2>
+<hr/>
+
+<%= link_to "Add Artist", new_billboard_artist_path(@billboard)%>
 
 <ul>
   <% @artists.each do |artist| %>

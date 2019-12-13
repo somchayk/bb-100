@@ -12,7 +12,7 @@ class ArtistsController < ApplicationController
 
   def new
     @artist = @billboard.artists.new
-    redirect_to billboard_artists_path
+    render :new
   end
 
   def create

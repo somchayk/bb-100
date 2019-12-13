@@ -1,3 +1,9 @@
+<nav>
+  <%= link_to 'Home', root_path %>
+  <%= link_to 'Billboards', billboards_path %>
+  <%= button_to 'Log Out', destroy_user_session_path, method: :delete%>
+</nav>
+
 <h1><%= @artist.id ? 'Edit Artist' : 'Add Artist' %></h1>
 
 <%= form_for [@billboard,@artist] do |f| %>
